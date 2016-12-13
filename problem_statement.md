@@ -1,4 +1,6 @@
-# Problem statement
+# 3. Problem statement
+
+###3.1 Assumptions
 
     As we noted in section 2, the Four-layer possible security management framework for routing protocols will work based on two assumptions: 
     a. Security mechanisms in routing protocols are strong. So that the routers inside an autonomous system won’t be compromised in the first place.
@@ -8,4 +10,10 @@
     
      As the second assumption, KARP proposed the key management protocol framework in KARP-design-guideline RFC 6518 [7], later on RKMP[4] has been proposed to help secure the routing protocols that perform unicast exchange and MaRK[6] has been proposed to help secure routing protocols with multicast exchange. Since these proposals are working in progress now and have not been further analysed, the security of these KMPs is really a problem. Which we will discuss and analyse in the following sections.
      
-     In order to better analyse the protocols and at last makes our conclusion convincible, the definition of secure should be clarified, and a set of security goals should be made. Since RKMP and MaRK are proposed by KARP working group, the general routing protocol threats document [8] and KARP threads documents [9] could be used as a starting point for establishing our goals.
+###3.2 Security Definition and Properties   
+
+    In order to better analyse the protocols and at last makes our conclusion convincible, the definition of secure should be clarified, and the security properties of those KMPs should be discussed as well.
+
+###3.3 Security Goals
+
+     and a set of security goals should be made. Since RKMP and MaRK are proposed by KARP working group, the general routing protocol threats document [8] and KARP threads documents [9] could be used as a starting point for establishing our goals.

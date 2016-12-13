@@ -1,4 +1,4 @@
-# Previous work
+# 2. Previous work
 
     From this section, we shall get some better understanding of the background pertaining the security problem we are going to analyse. What relevant works that has been done and where we need to improve. Also with the concepts and terms we are going to use in the following sections.
 
