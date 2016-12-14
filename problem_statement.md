@@ -10,14 +10,23 @@
     
      As the second assumption, KARP proposed the key management protocol framework in KARP-design-guideline RFC 6518 [7], later on RKMP[4] has been proposed to help secure the routing protocols that perform unicast exchange and MaRK[6] has been proposed to help secure routing protocols with multicast exchange. Since these proposals are working in progress now and have not been further analysed, the security of these KMPs is really a problem. Which we will discuss and analyse in the following sections.
      
-###3.2 Security Properties   
+###3.2 Security Definition and Properties   
+####3.2.1 KMP security
 
     In order to better analyse the protocols and at last makes our conclusion convincible, the security defination of key management protocol should be clarified, and the security properties of those KMPs should be discussed as well.
 
-    Due to the different usages of a protocol, the definition of security could be very wide. In order to find out a way to verify the security of the key management protocol, we need to understand what is the main purpose of a KMP.  In the documentation of ISAKMP (part of IKE)[11], it is noted that the key management protocol should be able to manage the security association and handle the establishment of cryptographic key for the Internet. So the security of a KMP is to make above procedure archive securely.
+    Due to the different usages of a protocol, the definition of security could be very wide. In order to find out a way to verify the security of the key management protocol, we need to understand what is the main purpose of a KMP.  In the documentation of ISAKMP (part of IKE)[11], it is noted that the key management protocol should be able to manage the security association and handle the establishment of cryptographic key for the Internet. So obviously, the security of a KMP is to make above procedure archive securely.
 
 
     The term “key management” refers to the establishment of cryptographic keying material for using with a cryptographic algorithm to provide protocol security services, especially integrity, authentication, and confidentiality[10]. As our main targets, RKMP and MaRK are all automated key management protocol, they derive one or more short-term session key by making use of long-term key (pre-shared symmetric secret value, RSA public key, DSA public key, and others). Apart from that, they also provide several other features such as against replay attack, authenticate each peers and ensure that short-term key is generated. 
+
+####3.2.2 Security Properties
+
+     (1)RKMP: As we discussed in section 2, RKMP is a modified version of IKEv2, that is to say, the properties are very similar to IKE. Such as automatically exchange keying material, set up a shared session secret from which cryptographic keys are derived. 
+
+
+     (2)MaRK:
+
 
 ###3.3 Security Goals
 
