@@ -22,7 +22,7 @@
 
 ####3.2.2 Security Properties
 
-     (1)RKMP: As we discussed in section 2, RKMP is a modified version of IKEv2, that is to say, the properties are very similar to IKE. Such as automatically exchange keying material, set up a shared session secret from which cryptographic keys are derived. 
+     (1)RKMP: As we discussed in section 2, RKMP is a modified version of IKEv2, that is to say, the properties are very similar to IKE. Such as automatically exchange keying material, set up a shared session secret from which cryptographic keys are derived. In all, the properties could be simplified as two things: First, authenticate the other peer during the exchange. Second, build a security channel between the two peers for secure communication.Unlike IKE only support devices which deploying IPsec, RKMP could be used integrated with TCP-AO, BFD or even RSVP-TE. Although the payload will certainly be different depending on the different authentication mechanism, but the properties will be the same
 
 
      (2)MaRK:
